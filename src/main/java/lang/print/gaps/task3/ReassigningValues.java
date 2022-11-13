@@ -1,5 +1,7 @@
 package lang.print.gaps.task3;
 
+import java.io.FileWriter;
+
 public class ReassigningValues {
     public static void main(String[] args) {
 
@@ -17,12 +19,17 @@ public class ReassigningValues {
         second = 6;
         third = 4;
 
-        System.out.println("l1: " + linkToFirst);
-        System.out.println("l2: " + linkToSecond);
-        System.out.println("l3: " + linkToThird);
-        System.out.println("f: " + first);
-        System.out.println("s: " + second);
-        System.out.println("t: " + third);
+
+
+        try{
+            FileWriter fw=new FileWriter("D:\\test.txt");
+            fw.write("First line = " + linkToFirst + linkToSecond + linkToThird);
+            fw.write("Second line = " + first + second + third);
+            fw.close();
+        }catch(Exception e)
+        {
+            System.out.println(e.getMessage());
+        }
 
     }
 }

@@ -3,13 +3,9 @@ package lang.print.gaps.task3;
 public class DeclaringVars {
     public static void main(String[] args) {
 
-        int a, b, c;
+        int a = 10, b = 10, c = 10;
 
-        a = 10;
-        b = a;
-        c = b;
-
-        System.out.println("c = " + c);
+        System.out.println(c);
 
     }
 }

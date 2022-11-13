@@ -9,15 +9,9 @@ public class ReassigningValues {
         int second = 10;
         int third = 100;
 
-        try{
-            FileWriter fw=new FileWriter("D:\\test.txt");
-            fw.write("line1 = " + first + " \n" + second + " \n" + third);
-            fw.close();
-        }catch(Exception e) {
-            System.out.println(e.getMessage());
-        } finally {
-            System.out.println("finish");
-        }
+        System.out.println(first);
+        System.out.println(second);
+        System.out.println(third);
 
         var linkToFirst = first;
         var linkToSecond = second;
@@ -27,18 +21,12 @@ public class ReassigningValues {
         second = 6;
         third = 4;
 
+        System.out.println(linkToFirst);
+        System.out.println(linkToSecond);
+        System.out.println(linkToThird);
 
-
-        try{
-            FileWriter fw=new FileWriter("D:\\test.txt");
-            fw.write("First line = " + linkToFirst + linkToSecond + linkToThird);
-            fw.write("Second line = " + first + second + third);
-            fw.close();
-        }catch(Exception e) {
-            System.out.println(e.getMessage());
-        } finally {
-            System.out.println("finish");
-        }
-
+        System.out.println(first);
+        System.out.println(second);
+        System.out.println(third);
     }
 }

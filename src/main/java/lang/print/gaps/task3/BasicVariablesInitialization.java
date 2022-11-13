@@ -9,15 +9,8 @@ public class BasicVariablesInitialization {
         int second = 10;
         int third = 100;
 
-        try{
-            FileWriter fw=new FileWriter("D:\\test.txt");
-            fw.write("line1 = " + first + " \n" + second + " \n" + third);
-            fw.close();
-        }catch(Exception e)
-        {
-            System.out.println(e.getMessage());
-        }  finally {
-            System.out.println("finish");
-        }
+        System.out.println(first);
+        System.out.println(second);
+        System.out.println(third);
     }
 }

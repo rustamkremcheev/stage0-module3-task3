@@ -1,7 +1,5 @@
 package lang.print.gaps.task3;
 
-import java.io.FileWriter;
-
 public class DeclaringVars {
     public static void main(String[] args) {
 
